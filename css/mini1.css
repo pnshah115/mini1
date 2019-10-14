@@ -112,7 +112,7 @@
 
 @keyframes move {
 	0% 	{ transform: rotate(0deg); width: 0px; height: 0px; opacity: 0; }
-	50%	{ transform: rotate(0deg); width: 185px; height: 0px; opacity: 1; }
+	25%	{ transform: rotate(0deg); width: 185px; height: 0px; opacity: 1; }
 	100%	{ transform: rotate(360deg); width: 185px; height: 185px; opacity: 1; } 	
 }
 @keyframes grow {
