@@ -21,7 +21,7 @@
     left: 9.8%;
     margin:0;
     position: absolute;
-    animation: grow 3s cubic-bezier(1,0,0,1);
+    animation: grow 4s cubic-bezier(1,0,0,1.5);
  
 
 }
@@ -35,7 +35,7 @@
     position: absolute;
     margin-left: 52px;
     transition:1s;
-    animation: move 4s cubic-bezier(1,0,0,1)
+    animation: move 4s cubic-bezier(1,0,0,1.2)
  
 
 }
@@ -48,7 +48,7 @@
 	left:34%;
     transform: translate(-50%, -50%);
     transition: 1s;
-    animation: slide 4s cubic-bezier(1,0,0,1);
+    animation: slide 4s cubic-bezier(1,0,0,1.2);
     
 }
 .blue{
@@ -112,12 +112,11 @@
 
 @keyframes move {
 	0% 	{ transform: rotate(0deg); width: 0px; height: 0px; opacity: 0; }
-	25%	{ transform: rotate(0deg); width: 185px; height: 0px; opacity: 1; }
-	50%	{ transform: rotate(0deg); width: 185px; height: 185px; opacity: 1; }
+	50%	{ transform: rotate(0deg); width: 185px; height: 0px; opacity: 1; }
 	100%	{ transform: rotate(360deg); width: 185px; height: 185px; opacity: 1; } 	
 }
 @keyframes grow {
-	0% { transform: scale(0); }
+	0% { transform: scale(0);}
 	100% {transform: scale(1);}
 }
 @keyframes slide {
@@ -126,6 +125,6 @@
 }
 @keyframes fade{
 	0% {opacity: 0;}
-	50% {opacity: 0}
+	50% {opacity: 0;}
 	100% {opacity:1;}
 }
