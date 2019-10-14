@@ -1,0 +1,133 @@
+
+.book{
+	height:600px;
+	width:475px;
+	background-color: #e8e5e1;
+	top: 50%;
+    left: 50%;
+    margin:0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    overflow: hidden;
+}
+.circle{
+	height:368px;
+	width: 368px;
+	z-index: 1;
+	border-radius: 50%;
+	border:9px solid #224b84;
+	top: 18%;
+    left: 9.8%;
+    margin:0;
+    position: absolute;
+    animation: grow 3s cubic-bezier(1,0,0,1);
+ 
+
+}
+.square{
+	height:185px;
+	width: 185px;
+	z-index: 3;
+	border:9px solid #cf464a;
+	top: 33%;
+    left: 28.9%;
+    position: absolute;
+    margin-left: 52px;
+    transition:1s;
+    animation: move 4s cubic-bezier(1,0,0,1)
+ 
+
+}
+.triangle{
+	height:61%;
+	width: 45%;
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left:34%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    animation: slide 4s cubic-bezier(1,0,0,1);
+    
+}
+.blue{
+	font-family: Proxima Nova;
+	line-height: .8;
+	font-weight: 700;
+	font-size: 18px;
+	color:#224b84;
+	top: 90%;
+    left: 72%;
+    margin:0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    animation:fade 4s;	
+}
+.shapes{
+	font-family: Proxima Nova;
+	line-height: .8;
+	font-weight: 700;
+	font-size: 18px;
+	color:#224b84;
+	z-index: 4;
+	opacity: 0;
+	transition:.5s;
+}
+.shapes:hover{
+	opacity:1;
+}
+.blue2{
+	font-family: Proxima Nova;
+	line-height: .8;
+	font-weight: 700;
+	font-size: 18px;
+	color:#224b84;
+	top: 10%;
+    left: 68.5%;
+    margin:0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    animation:fade 4s;
+  
+}
+.red{
+	font-family: Proxima Nova;
+	line-height: 1;
+	font-weight: 700;
+	font-size: 12px;
+	color:#cf464a;
+	top: 90%;
+    left:33%;
+    margin:0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    animation:fade 4s;
+   
+}
+.square:hover{
+	transform: rotate(360deg);
+}
+
+@keyframes move {
+	0% 	{ transform: rotate(0deg); width: 0px; height: 0px; opacity: 0; }
+	25%	{ transform: rotate(0deg); width: 185px; height: 0px; opacity: 1; }
+	50%	{ transform: rotate(0deg); width: 185px; height: 185px; opacity: 1; }
+	100%	{ transform: rotate(360deg); width: 185px; height: 185px; opacity: 1; } 	
+}
+@keyframes grow {
+	0% { transform: scale(0); }
+	100% {transform: scale(1);}
+}
+@keyframes slide {
+	0% {left:1000px;}
+	100% {right:0px;}
+}
+@keyframes fade{
+	0% {opacity: 0;}
+	50% {opacity: 0}
+	100% {opacity:1;}
+}
