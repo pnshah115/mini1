@@ -21,7 +21,7 @@
     left: 9.8%;
     margin:0;
     position: absolute;
-    animation: grow 4s cubic-bezier(1,0,0,1.5);
+    animation: grow 5s cubic-bezier(1,0,.3,1.5);
  
 
 }
@@ -35,7 +35,7 @@
     position: absolute;
     margin-left: 52px;
     transition:1s;
-    animation: move 4s cubic-bezier(1,0,0,1.2)
+    animation: move 5s cubic-bezier(1,0,0,1.2)
  
 
 }
@@ -48,7 +48,7 @@
 	left:34%;
     transform: translate(-50%, -50%);
     transition: 1s;
-    animation: slide 4s cubic-bezier(1,0,0,1.2);
+    animation: slide 5s cubic-bezier(1,0,.3,1.2);
     
 }
 .blue{
@@ -63,7 +63,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 4;
-    animation:fade 4s;	
+    animation:fade 5s;	
 }
 .shapes{
 	font-family: Proxima Nova;
@@ -90,7 +90,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 4;
-    animation:fade 4s;
+    animation:fade 5s;
   
 }
 .red{
@@ -105,7 +105,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 4;
-    animation:fade 4s;
+    animation:fade 5s;
    
 }
 
